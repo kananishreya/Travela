@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination</title>
+    <!-- boostrap link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- folder link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- animation link -->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- media link -->
+    <link rel="stylesheet" href="css/media.css">
+
+    <!-- font osme link -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- carocual -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- boostrap icon link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+
+ 
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+   <!-- Back to Top -->
+   <a href="#" class="btn blue text-white border-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+   <!-- top header start -->
+   <div class="blue px-5 d-none d-lg-block">
+       <div class="container">
+           <div class="row gx-0">
+               <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                   <div class="d-inline-flex align-items-center" style="height: 45px;">
+                       <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                               class="bi bi-twitter text-white"></i></a>
+                       <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                               class="fab fa-facebook-f fw-normal p-1 text-white"></i></a>
+                       <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                               class="fab fa-linkedin-in fw-normal text-white"></i></a>
+                       <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                               class="fab fa-instagram fw-normal text-white"></i></a>
+                       <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i
+                               class="fab fa-youtube fw-normal text-white"></i></a>
+                   </div>
+               </div>
+               <div class="col-lg-4 text-center text-lg-end">
+                   <div class="d-inline-flex align-items-center" style="height: 45px;">
+                       <button type="button" class="btn border-0 blue text-white" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><i class="fa fa-user me-2"></i>Register</button>
+
+                      
+                       <button type="button" class="btn border-0 blue text-white" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@mdo"><i
+                           class="fa fa-sign-in-alt me-2"></i>Login</button>
+                       <div class="dropdown">
+                           <a href="#" class="dropdown-toggle text-light" data-bs-toggle="dropdown"><small><i
+                                       class="fa fa-home me-2"></i> My Dashboard</small></a>
+                           <div class="dropdown-menu rounded">
+                               <a href="#" class="dropdown-item"><i class="fas fa-user-alt me-2"></i> My Profile</a>
+                               <a href="#" class="dropdown-item"><i class="fas fa-comment-alt me-2"></i> Inbox</a>
+                               <a href="#" class="dropdown-item"><i class="fas fa-bell me-2"></i> Notifications</a>
+                               <a href="#" class="dropdown-item"><i class="fas fa-cog me-2"></i> Account Settings</a>
+                               <a href="#" class="dropdown-item"><i class="fas fa-power-off me-2"></i> Log Out</a>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+   <!-- top header end -->
+
+ 
+ 
+ <!-- Modal -->
+  <!-- Register Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content blue">
+       <div class="modal-header align-items-center">
+         <h1 class="modal-title fs-5 fw-bold jost text-white" id="exampleModalLabel">Register</h1>
+         <button type="button" class="btn-close text-white fs-4 mb-2 text-center" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
+       </div>
+       <div class="modal-body">
+         <form id="registerForm">
+           <div class="mb-3">
+             <label for="email" class="col-form-label text-white">Email:</label>
+             <input type="text" class="form-control" id="email" name="email">
+           </div>
+           <div class="mb-3">
+             <label for="password" class="col-form-label text-white">Password:</label>
+             <input type="password" class="form-control" id="password" name="password">
+           </div>
+           <div class="mb-3">
+             <label for="contact" class="col-form-label text-white">Contact:</label>
+             <input type="text" class="form-control" id="contact" name="contact">
+           </div>
+           <div class="mb-3">
+             <label for="address" class="col-form-label text-white">Address:</label>
+             <textarea class="form-control" id="address" name="address"></textarea>
+           </div>
+           <div class="modal-footer">
+             <button type="button" class="btn bg-body fw-bold bluetext" id="submitBtn">Submit</button>
+             <a class="btn border-0 text-white fw-bold bluetext" id="toLogin">Login</a>
+           </div>
+         </form>
+       </div>
+     </div>
+   </div>
+ </div>
+
+ <!-- Login Modal -->
+ <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content blue">
+       <div class="modal-header align-items-center">
+         <h1 class="modal-title fs-5 fw-bold jost text-white" id="exampleModalLabel">Login</h1>
+         <button type="button" class="btn-close text-white fs-4 mb-2 text-center" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
+       </div>
+       <div class="modal-body">
+         <form id="loginForm">
+           <div class="mb-3">
+             <label for="email" class="col-form-label text-white">Email:</label>
+             <input type="text" class="form-control" id="email" name="email">
+           </div>
+           <div class="mb-3">
+             <label for="password" class="col-form-label text-white">Password:</label>
+             <input type="password" class="form-control" id="password" name="password">
+           </div>
+           <div class="modal-footer">
+             <button type="button" class="btn bg-body fw-bold bluetext" id="submitBtn">Submit</button>
+             <a class="btn border-0 text-white fw-bold bluetext" id="toRegister">Register</a>
+           </div>
+         </form>
+       </div>
+     </div>
+   </div>
+ </div>
+
+    <!-- header start -->
+    <div class="position-relative p-0 navline  ">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top    py-3 py-lg-0">
+            <div class="container ">
+                <a href="" class="navbar-brand p-0 ">
+                    <h1 class="m-0"><i class="fa fa-map-marker-alt me-3  "></i>Travela</h1>
+
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0  ">
+                        <a href="index.html" class="nav-item nav-link  fw-semibold ">Home</a>
+                        <a href="about.html" class="nav-item nav-link  fw-semibold">About</a>
+                        <a href="service.html" class="nav-item nav-link  fw-semibold">Services</a>
+                        <a href="packages.html" class="nav-item nav-link  fw-semibold">Packages</a>
+                        <a href="blog.html" class="nav-item nav-link  fw-semibold">Blog</a>
+                        <div class="nav-item dropdown pb-0">
+                            <a href="#" class="nav-link dropdown-toggle   fw-semibold"
+                                data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="destination.html" class="dropdown-item">Destination</a>
+                                <a href="tour.html" class="dropdown-item">Explore Tour</a>
+                                <a href="booking.html" class="dropdown-item">Travel Booking</a>
+                                <a href="gallery.html" class="dropdown-item">Our Gallery</a>
+                                <a href="guides.html" class="dropdown-item">Travel Guides</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link  fw-semibold">Contact</a>
+                    </div>
+                    <a href="" class="btn blue text-white rounded-pill py-2 px-4 ms-lg-4">Book Now</a>
+                </div>
+        </nav>
+
+    </div>
+    <!-- header end -->
+    <!-- Header Start -->
+    <div class="bg-breadcrumb">
+        <div class="container ">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h3 class="text-white display-3 mb-4 jost fw-semibold">Travel Destination</h1>
+                    <ol class="breadcrumb justify-content-center mb-0 roboto">
+                        <li class="breadcrumb-item "><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item "><a href="#">Pages</a></li>
+                        <li class="breadcrumb-item active text-white">Travel Destination</li>
+                    </ol>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Destination Start -->
+    <div class="container destination py-5">
+        <div class=" py-5">
+            <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                <h5 class="section-title px-3 jost bluetext text-uppercase">Destination</h5>
+                <h1 class="mb-0 roboto">Popular Destination</h1>
+            </div>
+            <div class="tab-class text-center">
+                <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
+                    <li class="nav-item">
+                        <a class="d-flex mx-3 py-2 border bluebro blue rounded-pill active" data-bs-toggle="pill"
+                            href="#tab-1">
+                            <span class="text-dark text-white" style="width: 150px;">All</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="d-flex py-2 mx-3 border bluebro bg-light rounded-pill" data-bs-toggle="pill"
+                            href="#tab-2">
+                            <span class="text-dark" style="width: 150px;">USA</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="d-flex mx-3 py-2 border bluebro bg-light rounded-pill" data-bs-toggle="pill"
+                            href="#tab-3">
+                            <span class="text-dark" style="width: 150px;">Canada</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="d-flex mx-3 py-2 border bluebro bg-light rounded-pill" data-bs-toggle="pill"
+                            href="#tab-4">
+                            <span class="text-dark" style="width: 150px;">Europe</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="d-flex mx-3 py-2 border bluebro bg-light rounded-pill" data-bs-toggle="pill"
+                            href="#tab-5">
+                            <span class="text-dark" style="width: 150px;">China</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="d-flex mx-3 py-2 border bluebro bg-light rounded-pill" data-bs-toggle="pill"
+                            href="#tab-6">
+                            <span class="text-dark" style="width: 150px;">Singapore</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane fade show p-0 active">
+                        <div class="row g-4">
+                            <div class="col-xl-8">
+                                <div class="row g-4">
+                                    <div class="col-lg-6">
+                                        <div class="destination-img">
+                                            <img class="img-fluid rounded w-100" src="image/destination-1.jpg" alt="">
+                                            <div class="destination-overlay p-4">
+                                                <a href="#"
+                                                    class="btn blue border-0 text-white rounded-pill border py-2 px-3">20
+                                                    Photos</a>
+                                                <h4 class="text-white mb-2 mt-3">New York City</h4>
+                                                <a href="#" class="btn-hover text-white">View All Place <i
+                                                        class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="destination-img">
+                                            <img class="img-fluid rounded w-100" src="image/destination-2.jpg" alt="">
+                                            <div class="destination-overlay p-4">
+                                                <a href="#"
+                                                    class="btn blue border-0 text-white rounded-pill border py-2 px-3">20
+                                                    Photos</a>
+                                                <h4 class="text-white mb-2 mt-3">Las vegas</h4>
+                                                <a href="#" class="btn-hover text-white">View All Place <i
+                                                        class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="destination-img">
+                                            <img class="img-fluid rounded w-100" src="image/destination-7.jpg" alt="">
+                                            <div class="destination-overlay p-4">
+                                                <a href="#"
+                                                    class="btn blue border-0 text-white rounded-pill border py-2 px-3">20
+                                                    Photos</a>
+                                                <h4 class="text-white mb-2 mt-3">Los angelas</h4>
+                                                <a href="#" class="btn-hover text-white">View All Place <i
+                                                        class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="destination-img">
+                                            <img class="img-fluid rounded w-100" src="image/destination-8.jpg" alt="">
+                                            <div class="destination-overlay p-4">
+                                                <a href="#"
+                                                    class="btn blue border-0 text-white rounded-pill border py-2 px-3">20
+                                                    Photos</a>
+                                                <h4 class="text-white mb-2 mt-3">Los angelas</h4>
+                                                <a href="#" class="btn-hover text-white">View All Place <i
+                                                        class="fa fa-arrow-right ms-2"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="destination-img h-100">
+                                    <img class="img-fluid rounded w-100 h-100" src="image/destination-9.jpg"
+                                        style="object-fit: cover; min-height: 300px;" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <a href="#"
+                                            class="btn blue border-0 text-white rounded-pill border py-2 px-3">20
+                                            Photos</a>
+                                        <h4 class="text-white mb-2 mt-3">San francisco</h4>
+                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="image/destination-4.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <a href="#"
+                                            class="btn blue border-0 text-white rounded-pill border py-2 px-3">20
+                                            Photos</a>
+                                        <h4 class="text-white mb-2 mt-3">Los angelas</h4>
+                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="image/destination-5.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <a href="#"
+                                            class="btn blue border-0 text-white rounded-pill border py-2 px-3">20
+                                            Photos</a>
+                                        <h4 class="text-white mb-2 mt-3">Los angelas</h4>
+                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="image/destination-6.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <a href="#"
+                                            class="btn blue border-0 text-white rounded-pill border py-2 px-3">20
+                                            Photos</a>
+                                        <h4 class="text-white mb-2 mt-3">Los angelas</h4>
+                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-2" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="image/destination-5.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <a href="#"
+                                            class="btn blue border-0 text-white rounded-pill border py-2 px-3">20
+                                            Photos</a>
+                                        <h4 class="text-white mb-2 mt-3">San francisco</h4>
+                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="image/destination-6.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <a href="#"
+                                            class="btn blue border-0 text-white rounded-pill border py-2 px-3">20
+                                            Photos</a>
+                                        <h4 class="text-white mb-2 mt-3">San francisco</h4>
+                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-3" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="image/destination-4.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <a href="#"
+                                            class="btn blue border-0 text-white rounded-pill border py-2 px-3">20
+                                            Photos</a>
+                                        <h4 class="text-white mb-2 mt-3">San francisco</h4>
+                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="image/destination-6.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <a href="#"
+                                            class="btn blue border-0 text-white rounded-pill border py-2 px-3">20
+                                            Photos</a>
+                                        <h4 class="text-white mb-2 mt-3">San francisco</h4>
+                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-4" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="image/destination-1.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <a href="#"
+                                            class="btn blue border-0 text-white rounded-pill border py-2 px-3">20
+                                            Photos</a>
+                                        <h4 class="text-white mb-2 mt-3">San francisco</h4>
+                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="image/destination-4.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <a href="#"
+                                            class="btn blue border-0 text-white rounded-pill border py-2 px-3">20
+                                            Photos</a>
+                                        <h4 class="text-white mb-2 mt-3">San francisco</h4>
+                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-5" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="image/destination-3.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <a href="#"
+                                            class="btn blue border-0 text-white rounded-pill border py-2 px-3">20
+                                            Photos</a>
+                                        <h4 class="text-white mb-2 mt-3">San francisco</h4>
+                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="image/destination-4.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <a href="#"
+                                            class="btn blue border-0 text-white rounded-pill border py-2 px-3">20
+                                            Photos</a>
+                                        <h4 class="text-white mb-2 mt-3">San francisco</h4>
+                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-6" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="image/destination-5.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <a href="#"
+                                            class="btn blue border-0 text-white rounded-pill border py-2 px-3">20
+                                            Photos</a>
+                                        <h4 class="text-white mb-2 mt-3">San francisco</h4>
+                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="destination-img">
+                                    <img class="img-fluid rounded w-100" src="image/destination-1.jpg" alt="">
+                                    <div class="destination-overlay p-4">
+                                        <a href="#"
+                                            class="btn blue border-0 text-white rounded-pill border py-2 px-3">20
+                                            Photos</a>
+                                        <h4 class="text-white mb-2 mt-3">San francisco</h4>
+                                        <a href="#" class="btn-hover text-white">View All Place <i
+                                                class="fa fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Destination End -->
+
+
+
+
+
+    <!-- Subscribe Start -->
+    <div class="subscribe py-5">
+        <div class="container">
+            <div class=" text-center py-5">
+                <div class="mx-auto text-center" style="max-width: 900px;">
+                    <h5 class="subscribe-title px-3 kosj">Subscribe</h5>
+                    <h1 class="text-white mb-4 jost">Our Newsletter</h1>
+                    <p class="text-white mb-5 roboto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                        tempore
+                        nam, architecto doloremque velit explicabo? Voluptate sunt eveniet fuga eligendi! Expedita
+                        laudantium fugiat corrupti eum cum repellat a laborum quasi.
+                    </p>
+                    <div class="position-relative mx-auto">
+                        <input class="form-control bluebro rounded-pill w-100 py-3 ps-4 pe-5" type="text"
+                            placeholder="Your email">
+                        <button type="button"
+                            class="btn blue text-white rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Subscribe End -->
+    <!-- Footer Start -->
+    <div class="footer py-5">
+        <div class="container ">
+            <div class=" py-5">
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Get In Touch</h4>
+                            <a href=""><i class="fas fa-home me-2"></i> 123 Street, New York, USA</a>
+                            <a href=""><i class="fas fa-envelope me-2"></i> info@example.com</a>
+                            <a href=""><i class="fas fa-phone me-2"></i> +012 345 67890</a>
+                            <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-share fa-2x text-white me-2"></i>
+                                <a class="btn-square btn blue text-white ps-3 pe-3  rounded-circle mx-1" href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn-square btn blue text-white rounded-circle mx-1" href=""><i
+                                        class="fab fa-twitter fs-5"></i></a>
+                                <a class="btn-square btn blue text-white rounded-circle mx-1" href=""><i
+                                        class="fab fa-instagram fs-5"></i></a>
+                                <a class="btn-square btn blue text-white rounded-circle mx-1" href=""><i
+                                        class="fab fa-linkedin-in fs-5"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Company</h4>
+                            <a href="about.html"><i class="fas fa-angle-right me-2"></i> About</a>
+                            <a href="service.html"><i class="fas fa-angle-right me-2"></i> services</a>
+                            <a href="packages.html"><i class="fas fa-angle-right me-2"></i> Packages</a>
+                            <a href="blog.html"><i class="fas fa-angle-right me-2"></i> Blog</a>
+                            <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Support</h4>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Contact</a>
+                            <a href="destination.html"><i class="fas fa-angle-right me-2"></i>Destination </a>
+                            <a href="tour.html"><i class="fas fa-angle-right me-2"></i>Explore Tour</a>
+                            <a href="booking.html"><i class="fas fa-angle-right me-2"></i> Travel Booking</a>
+                            <a href="guides.html"><i class="fas fa-angle-right me-2"></i> Travel Guides</a>
+                            <a href="testimonial.html"><i class="fas fa-angle-right me-2"></i>Testimonial</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <div class="row gy-3 gx-2 mb-4">
+                                <div class="col-xl-6">
+                                    <form>
+                                        <div class="form-floating">
+                                            <select class="form-select bg-dark text-white fs-5 border" id="select1">
+                                                <option value="1">Arabic</option>
+                                                <option value="2">German</option>
+                                                <option value="3">Greek</option>
+                                                <option value="3">New York</option>
+                                            </select>
+                                            <label for="select1">English</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-xl-6">
+                                    <form>
+                                        <div class="form-floating">
+                                            <select class="form-select bg-dark text-white border" id="select1">
+                                                <option value="1">USD</option>
+                                                <option value="2">EUR</option>
+                                                <option value="3">INR</option>
+                                                <option value="3">GBP</option>
+                                            </select>
+                                            <label for="select1">$</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <h4 class="text-white mb-3">Payments</h4>
+                            <div class="footer-bank-card">
+                                <a href="#" class="text-white me-2"><i class="fab fa-cc-amex fa-2x"></i></a>
+                                <a href="#" class="text-white me-2"><i class="fab fa-cc-visa fa-2x"></i></a>
+                                <a href="#" class="text-white me-2"><i class="fas fa-credit-card fa-2x"></i></a>
+                                <a href="#" class="text-white me-2"><i class="fab fa-cc-mastercard fa-2x"></i></a>
+                                <a href="#" class="text-white blue text-white"><i
+                                        class="fab fa-cc-paypal fa-2x"></i></a>
+                                <a href="#" class="text-white"><i class="fab fa-cc-discover fa-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+    <!-- Copyright Start -->
+    <div class=" copyright text-body py-4">
+        <div class="container">
+            <div class="">
+                <div class="row g-4 align-items-center text-white">
+                    <div class="col-md-6 text-center text-md-end mb-md-0">
+                        <i class="fas fa-copyright me-2"></i><a class="text-white" href="#">Travela</a>, All right
+                        reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-start">
+                        Designed By Distributed By <a href="" class="bluretext">Shreya Kanani</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Copyright End -->
+
+
+
+
+    <!-- bootrsp link -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- jquery link -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <!-- carouel -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- scipt folder link -->
+    <script src="js/script.js"></script>
+
+    <!-- animation link js -->
+    <script src="js/wow.min.js"></script>
+</body>
+
+</html>

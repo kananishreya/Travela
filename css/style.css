@@ -1,0 +1,1021 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* jost-200 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/jost-v15-latin-200.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/jost-v15-latin-200.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/jost-v15-latin-200.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../fonts/jost-v15-latin-200.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+         url('../fonts/jost-v15-latin-200.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('../fonts/jost-v15-latin-200.svg#Jost') format('svg'); /* Legacy iOS */
+  }
+  /* jost-300 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/jost-v15-latin-300.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/jost-v15-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/jost-v15-latin-300.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../fonts/jost-v15-latin-300.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+         url('../fonts/jost-v15-latin-300.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('../fonts/jost-v15-latin-300.svg#Jost') format('svg'); /* Legacy iOS */
+  }
+  /* jost-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/jost-v15-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/jost-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/jost-v15-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../fonts/jost-v15-latin-regular.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+         url('../fonts/jost-v15-latin-regular.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('../fonts/jost-v15-latin-regular.svg#Jost') format('svg'); /* Legacy iOS */
+  }
+  /* jost-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/jost-v15-latin-500.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/jost-v15-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/jost-v15-latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../fonts/jost-v15-latin-500.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+         url('../fonts/jost-v15-latin-500.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('../fonts/jost-v15-latin-500.svg#Jost') format('svg'); /* Legacy iOS */
+  }
+  /* jost-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/jost-v15-latin-600.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/jost-v15-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/jost-v15-latin-600.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../fonts/jost-v15-latin-600.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+         url('../fonts/jost-v15-latin-600.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('../fonts/jost-v15-latin-600.svg#Jost') format('svg'); /* Legacy iOS */
+  }
+  /* jost-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/jost-v15-latin-700.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/jost-v15-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/jost-v15-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../fonts/jost-v15-latin-700.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+         url('../fonts/jost-v15-latin-700.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('../fonts/jost-v15-latin-700.svg#Jost') format('svg'); /* Legacy iOS */
+  }
+  /* jost-800 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/jost-v15-latin-800.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/jost-v15-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/jost-v15-latin-800.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../fonts/jost-v15-latin-800.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+         url('../fonts/jost-v15-latin-800.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('../fonts/jost-v15-latin-800.svg#Jost') format('svg'); /* Legacy iOS */
+  }
+  /* jost-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/jost-v15-latin-900.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/jost-v15-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/jost-v15-latin-900.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../fonts/jost-v15-latin-900.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+         url('../fonts/jost-v15-latin-900.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('../fonts/jost-v15-latin-900.svg#Jost') format('svg'); /* Legacy iOS */
+  }
+
+  /* roboto-300 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/roboto-v30-latin-300.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/roboto-v30-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/roboto-v30-latin-300.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../fonts/roboto-v30-latin-300.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+         url('../fonts/roboto-v30-latin-300.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('../fonts/roboto-v30-latin-300.svg#Roboto') format('svg'); /* Legacy iOS */
+  }
+  /* roboto-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/roboto-v30-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../fonts/roboto-v30-latin-regular.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+         url('../fonts/roboto-v30-latin-regular.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('../fonts/roboto-v30-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+  }
+  /* roboto-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/roboto-v30-latin-500.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/roboto-v30-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/roboto-v30-latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../fonts/roboto-v30-latin-500.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+         url('../fonts/roboto-v30-latin-500.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('../fonts/roboto-v30-latin-500.svg#Roboto') format('svg'); /* Legacy iOS */
+  }
+  /* roboto-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v30-latin-700.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/roboto-v30-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/roboto-v30-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../fonts/roboto-v30-latin-700.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+         url('../fonts/roboto-v30-latin-700.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('../fonts/roboto-v30-latin-700.svg#Roboto') format('svg'); /* Legacy iOS */
+  }
+  /* roboto-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/roboto-v30-latin-900.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/roboto-v30-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/roboto-v30-latin-900.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../fonts/roboto-v30-latin-900.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+         url('../fonts/roboto-v30-latin-900.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('../fonts/roboto-v30-latin-900.svg#Roboto') format('svg'); /* Legacy iOS */
+  }
+
+
+/* font-family: "Roboto", sans-serif; */
+/* font-family: "Jost", sans-serif; */
+
+:root{
+    --maincolor:#13357B;
+    --bgcolor:#F2F2F2;
+    --roboto:"Roboto", sans-serif;
+    --jost:"Jost", sans-serif;
+}
+.blue{
+    background-color: var(--maincolor);
+}
+.bluetext{
+    color: var(--maincolor);
+}
+.bluebro{
+    border: 1px solid var(--maincolor) !important;
+}
+.grea{
+    background-color: var(--bgcolor)
+}
+.gtext{
+    color: #757575;
+}
+.roboto{
+    font-family: var(--roboto);
+}
+.jost{
+    font-family: var(--jost);
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* spinner  */
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    z-index: 99;
+}
+/* header start */
+.navbar-light .navbar-brand h1 {
+    color: var(--bs-white);
+}
+
+.navline{
+    border-bottom: 1px solid rgba(255, 255, 255, .1) !important;
+    z-index: 999;
+}
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    padding: 35px 15px;
+    
+    font-size: 17px;
+    font-weight: 400;
+    outline: none;
+    transition: .5s;
+    
+}
+/* .nav-link:hover{
+    background-color: var(--maincolor);
+    color: #fff !important;
+} */
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #fff !important;
+    background-color: var(--maincolor);
+    transition: .3s;
+}
+
+.sticky-top.navbar-light .navbar-nav .nav-link {
+    padding: 20px 15px;
+    color: var(--bs-dark) !important;
+}
+.sticky-top.navbar-light {
+    position: fixed;
+    background:#fff !important;
+}
+.sticky-top.navbar-light .navbar-nav .nav-link:hover{
+    color: #fff !important;
+    
+}
+
+
+.sticky-top.navbar-light .navbar-brand h1 {
+    color: var(--maincolor);
+}
+.sticky-top.navbar-light .navbar-brand img {
+    max-height: 45px;
+}
+.navbar-light {
+    /* position: absolute; */
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    z-index: 999;
+}
+
+.shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+}
+.btn:hover{
+    background-color: #13357B;
+    opacity: 0.9 !important;
+}
+/* header end */
+
+/* modal */
+.btn-close{
+    background-image: none !important;
+    opacity: 1 !important;
+}
+.btn-close:focus{
+    box-shadow: none !important;
+}
+/* carousel section start */
+.carousel-header .carousel-inner .carousel-item .carousel-caption  {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.5));
+    background-size: cover;
+}
+.nav-link {
+    color: #fff !important;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 50% 50%;
+}
+/* carousel section end */
+
+/* about section start */
+ /* .section-about-title::before {
+    content: "";
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    border: 1px solid #13357B !important;
+} */
+/* about section end */
+
+/* service section start */
+.service .service-content-inner:hover {
+    position: relative;
+    background: #13357B  !important;
+    transition: .3s;
+}
+ .service-content-inner:hover .service-content h5,
+ .service-content-inner:hover .service-content p,
+ .service-content-inner:hover .service-icon i {
+    color: #fff !important;
+    transition: .3s;
+}
+
+/* service section end */
+
+/* deatination section start */
+ .destination-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.destination-img .destination-overlay {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    z-index: 3;
+    transition: 0.5s;
+}
+
+ .destination-img .search-icon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: end;
+    padding: 20px 20px 0 0;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: 0.5s;
+
+}
+
+.destination-img .search-icon a i {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.tab-class .nav-item {
+    padding: 0 0 20px 0;
+}
+ .tab-class .nav-item a.active {
+    background: var(--bs-primary) !important;
+}
+
+ .nav-item a.active span {
+    color: var(--bs-white) !important;
+}
+
+ .destination-img:hover .search-icon {
+    background: rgba(19, 53, 123, 0.4);
+}
+
+.destination-img:hover .destination-overlay {
+    bottom: 0;
+}
+
+ .destination-img:hover .search-icon a i {
+    opacity: 1;
+}
+
+ .destination-img img {
+    transition: 0.5s;
+}
+
+ .destination-img:hover img {
+    transform: scale(1.2);
+}
+.tab-class .nav-item a.active {
+    background: #13357B !important;
+}
+/* deatination section end */
+
+/* ExploreTour start */
+ .nav-item {
+    padding: 0 0 20px 0;
+}
+.nav-item a.active {
+    background: #13357B !important;
+}
+
+.ExploreTour .tab-class .nav-item a.active span {
+    color: var(--bs-white) !important;
+}
+
+
+/* National Tour Start */
+ .national-item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+ .national-item img {
+    transition: 0.5s;
+}
+
+.national-item:hover img {
+    transform: scale(1.2);
+}
+
+ .national-item .national-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    padding: 20px;
+    background: rgba(0, 0, 0, .2);
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+ .national-item:hover .national-content {
+    background: rgba(19, 53, 123, .6);
+}
+
+ .national-item .national-plus-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+ .national-item:hover .national-plus-icon {
+    opacity: 1;
+}
+
+ .national-item .tour-offer {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    padding: 20px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 80px;
+    background: var(--bs-primary);
+    color: var(--bs-white);
+}
+
+/* International Tour Start */
+ .international-item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+ .international-item img {
+    transition: 0.5s;
+}
+
+ .international-item:hover img {
+    transform: scale(1.2);
+}
+
+ .international-item .tour-offer {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    padding: 20px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 80px;
+    background: var(--bs-primary);
+    color: var(--bs-white);
+}
+
+ .international-item .international-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    padding: 20px;
+    background: rgba(0, 0, 0, .3);
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+ .international-item:hover .international-content {
+    background: rgba(19, 53, 123, .6);
+}
+
+ .international-item .international-content .international-info a {
+    font-size: 14px;
+}
+
+ .international-item .international-plus-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+ .international-item:hover .international-plus-icon {
+    opacity: 1;
+}
+
+/* carousel Start */
+ .InternationalTour-carousel .international-item {
+    position: relative;
+    overflow: hidden;
+}
+
+ .InternationalTour-carousel .owl-dots {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    background: var(--bs-light);
+    border: 1px solid var(--bs-primary);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+ .InternationalTour-carousel .owl-dot.active {
+    width: 40px;
+    background: var(--bs-primary);
+}
+/* ExploreTour end */
+/*** Single Page Hero Header Start ***/
+.bg-breadcrumb {
+    background: linear-gradient(rgba(19, 53, 123, 0.5), rgba(19, 53, 123, 0.5)), url(../image/breadcrumb-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 150px 0 50px 0;
+}
+
+.bg-breadcrumb .breadcrumb-item a {
+    color: #fff !important;
+}
+/*** Single Page Hero Header End ***/
+
+/* gallery setion start */
+ .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+ .gallery-item img {
+    min-height: 300px;
+    object-fit: cover;
+}
+
+ .gallery-item .gallery-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    transition: 0.5s;
+}
+
+ .gallery-content .gallery-info {
+    position: relative;
+    margin-bottom: -100%;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+ .gallery-plus-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+ .gallery-item:hover .gallery-content .gallery-info,
+ .gallery-item:hover .gallery-plus-icon {
+   opacity: 1;
+   margin: 0;
+}
+
+ .gallery-item img {
+    transition: 0.5s;
+}
+
+ .gallery-item:hover img {
+    transform: scale(1.2);
+}
+
+ .gallery-item:hover .gallery-content {
+    background: rgba(19, 53, 123, 0.8);
+}
+
+.nav-item {
+    padding: 0 0 20px 0;
+}
+ .nav-item a.active {
+    background: var(--bs-primary) !important;
+}
+
+ .nav-item a.active span {
+    color: var(--bs-white) !important;
+}
+/* gallery setion end */
+
+/* booking section start */
+.booking {
+    background: linear-gradient(rgba(19, 53, 123, .8), rgba(19, 53, 123, .8)), url(../image/tour-booking-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+
+.section-booking-title {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    color: var(--bs-white);
+}
+
+
+
+ .btn.btn-primary {
+    box-shadow: inset 0 0 0 0 var(--bs-primary);
+}
+
+ .btn.btn-primary:hover {
+    box-shadow: inset 800px 0 0 0 var(--bs-light) !important;
+    color: var(--bs-primary) !important;
+}
+/* booking section end */
+
+/* travel section start */
+ .guide-img {
+    position: relative;
+}
+
+ .guide-icon {
+    position: absolute;
+    bottom: 0; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    margin-bottom: -50px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid var(--bs-primary);
+    background: var(--bs-light);
+    z-index: 9;
+}
+
+  .guide-img-efects {
+    position: relative;
+    overflow: hidden;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+ .guide-img-efects::after {
+    content: "";
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+ .guide-item:hover .guide-img-efects::after {
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background: rgba(19, 53, 123, .5);
+}
+
+ .guide-item .guide-img-efects img {
+    transition: 0.5s;
+}
+ .guide-item:hover .guide-img-efects img {
+    transform: scale(1.1);
+}
+
+
+
+.guide-title::after {
+    content: "";
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: 0.5s;
+}
+
+ .guide-item:hover .guide-title::after {
+    height: 100%;
+    background: var(--bs-primary) !important;
+    color: var(--bs-white);
+}
+
+
+
+ .guide-item:hover .guide-title .guide-title-inner {
+    position: relative;
+    color: var(--bs-white) !important;
+    z-index: 2;
+}
+
+ .guide-item:hover .guide-title .guide-title-inner h4 {
+    color: var(--bs-white);
+}
+/* travel section end */
+
+/* blog section start */
+ .blog-img {
+    position: relative;
+}
+
+ .blog-info {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    background: rgba(255, 255, 255, .2);
+    color: var(--bs-white);
+}
+
+ .blog-img-inner {
+    position: relative;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.blog-img-inner .blog-icon {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+ .blog-img-inner .blog-icon a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+ .blog-img:hover .blog-img-inner .blog-icon a {
+    opacity: 1;
+}
+
+.blog-img:hover .blog-img-inner .blog-icon {
+    height: 100%;
+    background: rgba(19, 53, 123, .6);
+    opacity: 1;
+}
+
+ .blog-img-inner {
+    overflow: hidden;
+}
+
+ .blog-img-inner img {
+    transition: 0.5s;
+}
+
+.blog-img:hover .blog-img-inner img {
+    transform: scale(1.2);
+}
+/* blog section end */
+
+/* testimonual sectiopn start */
+.testimonial .testimonial-carousel {
+    position: relative;
+}
+
+.testimonial .testimonial-carousel .testimonial-item .testimonial-img {
+    position: relative;
+    width: 100px; 
+    height: 100px; 
+    top: 0; left: 50%; 
+    transform: translate(-50%, -50%);
+    border: 3px solid #13357B; 
+    border-style: dotted;
+    border-radius: 50%;
+}
+
+.testimonial .testimonial-carousel .owl-dots {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial .testimonial-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    background: var(--bs-light);
+    border: 1px solid #13357B;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.testimonial .testimonial-carousel .owl-dot.active {
+    width: 40px;
+    background: #13357B;
+}
+
+.testimonial .testimonial-carousel .owl-nav .owl-prev {
+    position: absolute;
+    top: -55px;
+    left: 0;
+    padding: 5px 30px;
+    border: 1px solid #13357B;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.testimonial .testimonial-carousel .owl-nav .owl-next {
+    position: absolute;
+    top: -55px;
+    right: 0;
+    padding: 5px 30px;
+    border: 1px solid #13357B;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.testimonial .testimonial-carousel .owl-nav .owl-prev i,
+.testimonial .testimonial-carousel .owl-nav .owl-next i {
+    color: #13357B;
+    font-size: 17px;
+    transition: 0.5s;
+    padding: 10px;
+}
+
+.testimonial .testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial .testimonial-carousel .owl-nav .owl-next:hover {
+    background:#13357B;
+}
+
+.testimonial .testimonial-carousel .owl-nav .owl-prev:hover i,
+.testimonial .testimonial-carousel .owl-nav .owl-next:hover i {
+    color: var(--bs-white);
+}
+
+.testimonial .testimonial-carousel .owl-item.center .testimonial-item .testimonial-comment {
+    background: #13357B !important;
+    color: var(--bs-white);
+    transition: 0.5s;
+}
+
+.testimonial .testimonial-carousel .owl-item.center .testimonial-item .testimonial-img {
+    border: 3px solid var(--bs-white); 
+    border-style: dotted;
+    transition: 0.5s;
+}
+/* testimonual sectiopn end */
+
+/* subscribe section start */
+.subscribe {
+    background: linear-gradient(rgba(19, 53, 123, .6), rgba(19, 53, 123, .6)), url(../image/subscribe-img.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.subscribe .subscribe-title {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    color: var(--bs-white);
+}
+
+.form-control:focus {
+    /* color: var(--bs-body-color); */
+    background-color: var(--bs-body-bg);
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem transparent;
+}
+.form-select:focus {
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem transparent;
+}
+/* subscribe section end */
+
+/* footer start */
+.footer {
+    background :#000;
+}
+.footer .footer-item a {
+    line-height: 30px;
+    color: var(--bs-white);
+    transition: 0.5s;
+}
+
+.footer .footer-item a:hover {
+    letter-spacing: 0px;
+    color: #13357B;
+}
+/* .rounded-circle {
+    border-radius: 10% !important;
+} */
+
+/* footer end */
+
+/* copyright Start */
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    background:#000 !important;
+}
+/* copyright end */
+
+
